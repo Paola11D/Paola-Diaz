@@ -1,0 +1,348 @@
+/* ==========================================================================
+   RESET & ESTILOS GLOBALES
+   Limpieza de márgenes predeterminados y configuración de tipografías base.
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Fjalla One', sans-serif;
+    color: #4A4A4A; /* Color secundario medio para textos legibles */
+    background-color: #FAFAFA;
+    line-height: 1.6;
+}
+
+/* Contenedor global para centrar y limitar el ancho del diseño */
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Títulos de sección estandarizados con tipografía principal */
+.titulo-seccion {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #1A1A1A;
+}
+
+/* ==========================================================================
+   HEADER & NAVEGACIÓN
+   Estructura fija en la parte superior con un esquema de color oscuro.
+   ========================================================================== */
+.sitio-header {
+    background-color: #1A1A1A; /* Color principal oscuro */
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.navegacion-principal a {
+    color: #FAFAFA; /* Contraste claro sobre fondo oscuro */
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover suave para la navegación */
+.navegacion-principal a:hover {
+    color: #E67E22; /* Color de acento */
+}
+
+/* ==========================================================================
+   SECCIÓN HERO
+   Diseño de dos columnas con alineación vertical centrada. Fondo cálido claro.
+   ========================================================================== */
+.seccion-hero {
+    background-color: #F0EAE1; /* Color claro 2 */
+    padding: 100px 0;
+}
+
+.hero-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-texto {
+    flex: 1;
+}
+
+.hero-texto h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4.5rem;
+    color: #1A1A1A;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.hero-texto h2 {
+    font-size: 1.8rem;
+    color: #4A4A4A;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+/* Botón de llamada a la acción con transiciones */
+.boton-acento {
+    display: inline-block;
+    background-color: #E67E22; /* Color de acento */
+    color: #FAFAFA;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-acento:hover {
+    background-color: #1A1A1A;
+    transform: translateY(-2px);
+}
+
+.hero-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* Foto de perfil con máscara perfectamente circular */
+.foto-perfil {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border: 5px solid #FAFAFA;
+}
+
+/* ==========================================================================
+   SECCIÓN MIS PROYECTOS
+   Mapeo de fila de 3 elementos con sombras suaves y estética moderna.
+   ========================================================================== */
+.seccion-proyectos {
+    background-color: #FAFAFA; /* Color claro 1 (Alternancia de contraste) */
+    padding: 100px 0;
+}
+
+.proyectos-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.tarjeta-proyecto {
+    background-color: #F0EAE1;
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto levitación al pasar el mouse por la tarjeta */
+.tarjeta-proyecto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.tarjeta-proyecto img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.tarjeta-contenido {
+    padding: 20px;
+}
+
+.tarjeta-contenido h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    color: #1A1A1A;
+    margin-bottom: 10px;
+}
+
+.tarjeta-contenido p {
+    font-size: 0.95rem;
+    color: #4A4A4A;
+}
+
+/* ==========================================================================
+   SECCIÓN HABILIDADES
+   Fila limpia de 4 columnas con bloques minimalistas de alto contraste.
+   ========================================================================== */
+.seccion-habilidades {
+    background-color: #F0EAE1; /* Color claro 2 */
+    padding: 100px 0;
+}
+
+.habilidades-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.tarjeta-habilidad {
+    flex: 1;
+    background-color: #1A1A1A; /* Fondo oscuro para contrastar fuertemente */
+    color: #FAFAFA;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+}
+
+.tarjeta-habilidad:hover {
+    background-color: #E67E22; /* Giro cromático interactivo */
+}
+
+/* ==========================================================================
+   SECCIÓN CONTACTO
+   Estructura mixta: Información textual a la izquierda, formulario estilizado a la derecha.
+   ========================================================================== */
+.seccion-contacto {
+    background-color: #FAFAFA; /* Color claro 1 */
+    padding: 100px 0;
+}
+
+.contacto-flex {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.contacto-texto {
+    flex: 1;
+}
+
+.contacto-texto h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.5rem;
+    color: #1A1A1A;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.contacto-texto p {
+    font-size: 1.1rem;
+    color: #4A4A4A;
+}
+
+.contacto-formulario {
+    flex: 1;
+    background-color: #F0EAE1;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+/* Estilización de los inputs y áreas de texto */
+.grupo-campo {
+    margin-bottom: 20px;
+}
+
+.grupo-campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #1A1A1A;
+}
+
+.grupo-campo input,
+.grupo-campo textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #4A4A4A;
+    background-color: #FAFAFA;
+    font-family: sans-serif; /* Cambiado a sans-serif básico para facilitar la lectura del usuario al escribir */
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.grupo-campo input:focus,
+.grupo-campo textarea:focus {
+    outline: none;
+    border-color: #E67E22; /* Destaca el campo activo */
+}
+
+.boton-formulario {
+    width: 100%;
+    background-color: #1A1A1A;
+    color: #FAFAFA;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.2rem;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-formulario:hover {
+    background-color: #E67E22;
+}
+
+/* ==========================================================================
+   FOOTER
+   Distribución en fila centrada con colores oscuros para marcar el fin de página.
+   ========================================================================== */
+.sitio-footer {
+    background-color: #1A1A1A; /* Color principal oscuro */
+    color: #FAFAFA;
+    padding: 40px 0;
+}
+
+.footer-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    color: #FAFAFA;
+}
+
+.redes-sociales {
+    display: flex;
+    gap: 25px;
+}
+
+.redes-sociales a {
+    color: #FAFAFA;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.redes-sociales a:hover {
+    color: #E67E22;
+}
