@@ -172,7 +172,7 @@ body {
 
 .tarjeta-proyecto img {
     width: 100%;
-    height: 220px;
+     max height: 320px;
     object-fit: contain;
 }
 
