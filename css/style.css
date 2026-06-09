@@ -137,7 +137,7 @@ body {
     width: 350px;
     height: 350px;
     object-fit: cover;
-    border: 5px solid #E67E22;
+    border: 5px solid #000000;
 }
 
 /* ==========================================================================
@@ -153,6 +153,7 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    align-items: flex-start;
 }
 
 .tarjeta-proyecto {
