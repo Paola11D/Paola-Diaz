@@ -137,7 +137,7 @@ body {
     width: 350px;
     height: 350px;
     object-fit: cover;
-    border: 5px solid #FAFAFA;
+    border: 5px solid#E67E22;
 }
 
 /* ==========================================================================
@@ -220,7 +220,7 @@ body {
 }
 
 .tarjeta-habilidad:hover {
-    background-color: #E67E22; /* Giro cromático interactivo */
+    background-color: #E67E22; /* Giro cromático interactivo */ 
 }
 
 /* ==========================================================================
